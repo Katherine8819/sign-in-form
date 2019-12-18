@@ -28,7 +28,7 @@ button {
   width: 100%;
   max-width: 400px;
   height: 500px;
-  margin: 50px auto;
+  margin: 30px auto;
   background: linear-gradient(45deg, #3023ae, #c66cd7);
   box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 1);
   overflow: hidden;
@@ -99,12 +99,12 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #fd264f;
+  border-bottom: 1px solid #e66a64;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 2px solid #fd264f;
+  border-bottom: 2px solid #e66a64;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked + div,
@@ -118,9 +118,7 @@ select:focus {
   opacity: 0;
   padding: 2rem 0;
   width: 90%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -139,16 +137,12 @@ select:focus {
   margin-left: 0;
 }
 
-.tabs .tab-2:last-child [type="radio"] + div {
-  /* margin-left: 100%; */
-}
-
 .tabs .tab-2:last-child [type="radio"]:checked + div {
   margin-left: -120%;
 }
 
 .contacts {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .contacts__label {
@@ -204,7 +198,7 @@ input[type="checkbox"]:checked + label:before {
   background-color: #23ae92;
   border: none;
   color: #fbf6e4;
-  margin: 30px 0 0;
+  margin: 20px 0 0;
 }
 
 .hints {
