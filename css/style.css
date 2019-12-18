@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  min-height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0.08rem;
+  font-family: "Quicksand", sans-serif;
+  color: #fbf6e4;
+}
+
+a,
+button {
+  transition: all 0.25s ease-in;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  margin: 50px auto;
+  background: linear-gradient(45deg, #3023ae, #c66cd7);
+  box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, 0);
+  opacity: 0.4;
+}
+
+.form {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 0.8em;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.tabs {
+  display: block;
+
+  display: flex;
+  margin: 0 auto;
+  padding: 40px 70px;
+}
+
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
+  cursor: pointer;
+  display: block;
+  padding: 1rem 0;
+}
+
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs [class^="tab"] [type="radio"]:hover,
+.tabs [class^="tab"] [type="radio"]:focus,
+.tabs [class*=" tab"] [type="radio"]:hover,
+.tabs [class*=" tab"] [type="radio"]:focus {
+  border-bottom: 1px solid #fd264f;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
+  border-bottom: 2px solid #fd264f;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked + div,
+.tabs [class*=" tab"] [type="radio"]:checked + div {
+  opacity: 1;
+}
+
+.tabs [class^="tab"] [type="radio"] + div,
+.tabs [class*=" tab"] [type="radio"] + div {
+  display: block;
+  opacity: 0;
+  padding: 2rem 0;
+  width: 90%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs .tab-2 {
+  width: 70px;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+.tabs .tab-2 [type="radio"] + div {
+  width: 200%;
+  margin-left: 200%;
+}
+
+.tabs .tab-2 [type="radio"]:checked + div {
+  margin-left: 0;
+}
+
+.tabs .tab-2:last-child [type="radio"] + div {
+  /* margin-left: 100%; */
+}
+
+.tabs .tab-2:last-child [type="radio"]:checked + div {
+  margin-left: -120%;
+}
+
+.contacts {
+  margin: 20px 0;
+}
+
+.contacts__label {
+  margin: 0;
+  text-align: left;
+  font-size: 1.6rem;
+  width: 260px;
+}
+
+.contacts__input {
+  background-color: transparent;
+  padding: 10px;
+  color: #fbf6e4;
+  border: 2px solid #a188c9;
+  width: 260px;
+  margin-bottom: 7px;
+}
+
+.checkbox__block {
+  font-size: 13px;
+  width: 260px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2713";
+  color: transparent;
+  display: inline-block;
+  border: 1px solid #9f87c8;
+  font-size: 13px;
+  line-height: 1.6rem;
+  margin: -5px 5px 0 0;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  vertical-align: middle;
+  transition: color ease 0.3s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: #fff;
+  background-color: #23ae92;
+}
+
+.btn {
+  cursor: pointer;
+  width: 260px;
+  padding: 10px;
+  text-align: center;
+  background-color: #23ae92;
+  border: none;
+  color: #fbf6e4;
+  margin: 30px 0 0;
+}
+
+.hints {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+}
+
+.hint {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #b9b9cc;
+  border-bottom: 1px solid #b9b9cc;
+  opacity: 0.6;
+  padding: 3px;
+  letter-spacing: 0;
+}
